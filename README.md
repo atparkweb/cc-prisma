@@ -1,10 +1,8 @@
-# Setting up a containerized ORM project
+# Setting up a Prisma ORM project
 
-1. [ ] Install Prisma CLI
-	a. [ ] brew: `brew install prisma`
-	b. [ ] npm:  `npm install -g prisma`
+1. Init NPM project: `npm init -y`
 2. [ ] Setup config Prisma: `prisma init`
-3. [ ] Generate Prisma Client: `prisma generate`
-4. [ ] Setup Node/NPM project
-	a. [ ] `npm init -y`
-	b. [ ] `npm i --save prisma-client-lib`
+3. [ ] Set DATABASE_URL in .env file: `postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA`
+4. [ ] Write a model schema
+5. [ ] Generate migration: `npx prisma migrate dev --name init`
+6. [ ] Generate Prisma Client: `npx prisma generate`
